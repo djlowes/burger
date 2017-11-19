@@ -18,8 +18,9 @@ router.post("/burgers/create", function(req, res) {
 });
 
 router.put('/burgers/update', function(req,res) {
-    burger.updateOne(req.body.burger_id, function(result) {
-        console.log(result);
+    burger.updateOne(req.body.id, function(result) {
+      console.log("GOT IT")
+        // console.log(result);
         res.redirect('/');
     });
 });
