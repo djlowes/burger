@@ -29,10 +29,9 @@
 		</div>
 		<div class="col-md-4 text-center">
 			<p><i class="fa fa-bars" aria-hidden="true"> </i> {{this.burger_name}}</p>
-      <form class="button-size">
-			<!-- <form method="GET" action="/burgers/update?_method=PUT" class="button-size"> -->
-				<!-- <input type="hidden" name="burger_id" type="text" value=({this.id}}>  NEED TO ADD CURLY BRACKET-->
-				<button type="submit" class="btn btn-default" id="devour" data-devoured="{{this.devoured}}" data-id="{{this.id}}">Devour it</button>
+			<form method="POST" action="/burgers/update?_method=PUT" class="button-size">
+				<input type="hidden" name="burger_id" type="text" value={{this.id}}>
+				<button type="submit" class="btn btn-default">Devour it</button>
 			</form><br>
 			{{/unless}}
 			{{/each}}
@@ -51,3 +50,5 @@
 		</div>
 	</div>
 </div><br>
+
+<!-- // Work on design when you get time -->
