@@ -22,6 +22,6 @@ app.use('/', router);
 //--------------------------------------
 //Hush, listen.
 //--------------------------------------
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
 console.log("Listening on Port: " + port);
